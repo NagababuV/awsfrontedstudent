@@ -14,7 +14,8 @@ export default function Home() {
     },[])
 
     const loadUsers=async()=>{
-        const result = await axios.get("http://localhost:9090/student/getall");
+       // const result = await axios.get("http://localhost:9090/student/getall");
+        const result = await axios.get("http://studentreg.ap-south-1.elasticbeanstalk.com/student/getall");
 
         setUsers(result.data);
     }

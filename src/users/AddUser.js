@@ -22,7 +22,7 @@ export default function AddUser() {
     }
     const onSubmit= async (e)=>{
         e.preventDefault();
-        await axios.post('http://localhost:9090/student/add',user)
+        await axios.post('http://studentreg.ap-south-1.elasticbeanstalk.com/student/add',user)
         navigate("/")
 
 
